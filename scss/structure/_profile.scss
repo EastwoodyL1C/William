@@ -1,0 +1,57 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid $color-border;
+    margin-top: 17.4rem;
+    padding-bottom: 20.265rem;
+    gap: 9.4rem;
+    &__info {
+    }
+
+    &__avatar {
+    }
+}
+.info {
+    
+    &__title {
+        margin-bottom: 2.4rem;
+        white-space: nowrap;
+        word-break: keep-all;
+    }
+
+    &__workplace {
+        @include text ($font-base, 500, 1.8rem, 2.1rem, $color-white);
+        text-transform: uppercase;
+        margin-bottom: 2.4rem;
+        span {
+            padding: 0rem 2.7rem;
+        }
+    }
+
+    &__desc {
+        max-width: 557px;
+        @include text ($font-base, 400, 1.6rem, 160%, $color-grey);
+        margin-bottom: 2.4rem;
+    }
+    button {
+        padding: 1.3rem 1.8rem;
+        background: $color-primary;
+        border-radius: $b-rad; 
+        border: 0;       
+    }
+    button:hover {
+        filter: brightness(110%);
+        box-shadow: rgba($color: $color-primary_shadow, $alpha: 0.4) 0px 0px 0px 3px, rgba($color: $color-primary_shadow, $alpha: 0.65)0px 4px 6px -1px,rgba($color: $color-white, $alpha: 0.08) 0px 1px 0px inset;
+        transition: 0.5s all ease-in-out
+    }
+    &__btn {
+        @include text ($font-base, 500, 1.6rem, 1.9rem, $color-white);
+    }
+}
+.avatar {
+
+    &__img {
+
+    }
+}

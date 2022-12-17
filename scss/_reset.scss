@@ -8,6 +8,10 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -22,6 +26,14 @@ html {
 
 body {
   margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /**
@@ -72,10 +84,6 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
-
-a {
-  background-color: transparent;
-}
 
 /**
  * 1. Remove the bottom border in Chrome 57-
