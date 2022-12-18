@@ -1,0 +1,45 @@
+.customers {
+    padding: 9rem 0rem;
+    border-bottom: 0.1rem solid $color-border;
+    &__title {
+        margin-bottom: 1.7rem;
+        span {
+            color: $color-primary;
+            margin-left: 1rem;
+        }
+    }
+    &__desc {
+        @include text ($font-base, 400, 1.6rem, 2.9rem, $color-grey);
+        max-width: 460px;
+        margin-bottom: 4rem;
+    }
+}
+.comments {
+    display: flex;
+    justify-content: flex-start;
+    &__desc {
+        @include text ($font-base, 400, 1.6rem, 2.9rem, $color-white);
+    }
+}
+.profile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    max-width: 300px;
+    &__img {
+        grid-area: 1 / 1 / 3 / 2;
+        max-width: 72px;
+    }
+
+    &__name {
+        grid-area: 1 / 2 / 2 / 4;
+    }
+
+    &__workplace {
+        grid-area: 2 / 2 / 3 / 4;
+        @include text ($font-base, 400, 1.8rem, 2.9rem, $color-primary);
+        display: flex;
+        flex-grow: 0;
+    }
+}

@@ -52,18 +52,24 @@
             display: block;
             background: $color-grad;
             border-radius: 50%;
-            z-index: 3;
+            z-index: 0;
         }
         &::before {
             width: 34.2rem;
             height: 34.2rem;
+            top: -4.6rem;
+            right: -3rem;
         }
         &::after {
             width: 20.9rem;
             height: 20.9rem;
+            bottom: -2.5rem;
+            left: 2.7rem;
         }
     }
     img {
         border-radius: 50%;
+        position: relative;
+        z-index: 1;
     }
 }
