@@ -1,0 +1,24 @@
+.footer {
+    padding: 1.65rem 0rem;
+    background: $color-dark2;
+    &__block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+	}
+    a:hover{
+        color: $color-primary;
+        text-decoration: none;
+        box-shadow: $color-primary_shadow 0px 3px;
+        transition: 0.5s all ease-in-out;
+        transform: translateY(-0.1rem);
+    }
+	&__licence {
+        @include text ($font-base, 400, 1.6rem, 1.9rem, $color-white);
+        a {
+            color: $color-primary;
+        }
+	}
+	&__nav {
+	}
+}
