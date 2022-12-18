@@ -1,0 +1,35 @@
+.services {
+    padding: 9rem 0rem;
+    border-bottom: 0.1rem solid $color-border;
+    &__title {
+        margin-bottom: 1.7rem;
+        span {
+            color: $color-primary;
+        }
+    }
+    &__desc {
+        @include text ($font-base, 400, 1.6rem, 2.6rem, $color-grey);
+        max-width: 460px;
+        margin-bottom: 4rem;
+    }
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1.2rem;
+    &__img {
+        grid-area: 1 / 1 / 4 / 2;
+    }
+    &__title {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+    &__desc {
+        grid-area: 2 / 2 / 5 / 6;
+        @include text ($font-base, 400, 1.6rem, 2.6rem, $color-grey);
+    }
+    &:hover p {
+        color: $color-white;
+    }
+}

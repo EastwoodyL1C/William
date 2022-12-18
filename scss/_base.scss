@@ -11,6 +11,14 @@ h1 {
     @include text ($font-base, 700, 9.2rem, 10.9rem, $color-white);
     margin: 0;
 }
+h2 {
+    @include text ($font-base, 700, 4.4rem, 5.2rem, $color-white);
+    margin: 0;
+}
+h3 {
+    @include text ($font-base, 500, 2.2rem, 2.6rem, $color-white);
+    margin: 0;
+}
 
 img {
     max-width: 100%;

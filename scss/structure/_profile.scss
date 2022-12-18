@@ -6,20 +6,12 @@
     margin-top: 17.4rem;
     padding-bottom: 20.265rem;
     gap: 9.4rem;
-    &__info {
-    }
-
-    &__avatar {
-    }
 }
 .info {
-    
     &__title {
         margin-bottom: 2.4rem;
-        white-space: nowrap;
-        word-break: keep-all;
+        flex-shrink: 0;
     }
-
     &__workplace {
         @include text ($font-base, 500, 1.8rem, 2.1rem, $color-white);
         text-transform: uppercase;
@@ -28,7 +20,6 @@
             padding: 0rem 2.7rem;
         }
     }
-
     &__desc {
         max-width: 557px;
         @include text ($font-base, 400, 1.6rem, 160%, $color-grey);
@@ -38,7 +29,8 @@
         padding: 1.3rem 1.8rem;
         background: $color-primary;
         border-radius: $b-rad; 
-        border: 0;       
+        border: 0;  
+        display: inline-block;    
     }
     button:hover {
         filter: brightness(110%);
@@ -50,8 +42,28 @@
     }
 }
 .avatar {
-
     &__img {
-
+        max-width: 460px;
+        position: relative;
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            background: $color-grad;
+            border-radius: 50%;
+            z-index: 3;
+        }
+        &::before {
+            width: 34.2rem;
+            height: 34.2rem;
+        }
+        &::after {
+            width: 20.9rem;
+            height: 20.9rem;
+        }
+    }
+    img {
+        border-radius: 50%;
     }
 }

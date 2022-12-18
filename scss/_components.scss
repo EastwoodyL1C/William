@@ -4,5 +4,29 @@
 
 .container {
     padding: 3.7rem 0rem 9rem 0rem;
-    height: 100vh;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2.6rem;
+}
+
+.col-4 {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 calc(33.33% - 2.6rem);
+}
+
+.col-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 calc(50% - 2.6rem);
+    padding: 2.9rem;
+    background: $color-dark2;
+    border-radius: 1.2rem;
 }
