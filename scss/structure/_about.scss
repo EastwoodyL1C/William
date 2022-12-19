@@ -6,6 +6,14 @@
     margin-top: 17.4rem;
     padding-bottom: 20.265rem;
     gap: 9.4rem;
+    @include xl {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    @include lg {
+        padding-bottom: 10rem;
+        margin-top: 10.4rem;
+    }
 }
 .info {
     &__title {
@@ -71,5 +79,22 @@
         border-radius: 50%;
         position: relative;
         z-index: 1;
+    }
+    @include lg {
+        &__img {
+            max-width: 300px;
+            &::before {
+                width: 25.2rem;
+                height: 25.2rem;
+                top: -1.6rem;
+                right: -1rem;
+            }
+            &::after {
+                width: 18.9rem;
+                height: 18.9rem;
+                bottom: -0.5rem;
+                left: 2.7rem;
+            }
+        }
     }
 }

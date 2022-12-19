@@ -21,11 +21,25 @@
     padding: 3.2rem;
     align-items: flex-start;
     border-radius: 0.8rem;
+    border: 1px solid $color-background;
     &__detail {
         border-bottom: 0.1rem solid $color-border;
     }
+    @include md {
+        flex: 1 1 100%;
+        max-width: calc(70% - 2.6rem);
+        align-items: center;
+    }
+}
+.columns:hover {
+    border: 1px solid $color-white;
+    transition: 0.3s all ease-in-out;
 }
 .detail {
+    @include md {
+        display: flex;
+        flex-direction: column;
+    }
     &__name {
         margin-bottom: 1.4rem;
         @include text ($font-base, 500, 1.6rem, 2.6rem, $color-white);
@@ -39,6 +53,11 @@
     }
 }
 .benefits {
+    @include md {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     margin-top: 3.5rem;
     &__btn {
         padding: 1.3rem 1.8rem;

@@ -1,4 +1,5 @@
 .touch {
+    padding-top: 9rem;
     padding-bottom: 5.3rem;
     &__title {
         margin-bottom: 1.7rem;
@@ -15,26 +16,29 @@
 }
 .field {
     &__name {
-        padding: 1.4rem 101.5rem 1.4rem 1.6rem;
+        padding: 1.4rem 0rem 1.4rem 1.6rem;
         border: 1px solid $color-border;
         border-radius: 0.4rem;
         margin-bottom: 2.4rem;
+        width: 100%;
         @include text ($font-base, 400, 1.4rem, 1.7rem, $color-grey);
         background: none;
     }
     &__mail {
-        padding: 1.4rem 101.5rem 1.4rem 1.6rem;
+        padding: 1.4rem 0rem 1.4rem 1.6rem;
         border: 1px solid $color-border;
         border-radius: 0.4rem;
         margin-bottom: 2.4rem;
+        width: 100%;
         @include text ($font-base, 400, 1.4rem, 1.7rem, $color-grey);
         background: none;
     }
     &__message {
-        padding: 1.4rem 101.5rem 8.9rem 1.6rem;
+        padding: 1.4rem 0rem 8.9rem 1.6rem;
         border: 1px solid $color-border;
         border-radius: 0.4rem;
         margin-bottom: 2.4rem;
+        width: 100%;
         @include text ($font-base, 400, 1.4rem, 1.7rem, $color-grey);
         background: none;
     }
@@ -49,5 +53,8 @@
         filter: brightness(110%);
         box-shadow: rgba($color: $color-primary_shadow, $alpha: 0.4) 0px 0px 0px 3px, rgba($color: $color-primary_shadow, $alpha: 0.65)0px 4px 6px -1px,rgba($color: $color-white, $alpha: 0.08) 0px 1px 0px inset;
         transition: 0.5s all ease-in-out;
+    }
+    input {
+        @include text ($font-base, 400, 1.4rem, 1.7rem, $color-white);
     }
 }

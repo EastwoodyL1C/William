@@ -1,9 +1,12 @@
 .wrapper {
-    background: $color-dark1;
+    background: $color-background;
 }
 
 .container {
     padding: 3.7rem 0rem 3.7rem 0rem;
+    @include sm {
+        padding: 3.7rem;
+    }
 }
 
 .row {
@@ -12,12 +15,19 @@
     justify-content: center;
     flex-direction: row;
     gap: 2.6rem;
+    @include lg {
+        justify-content: space-around;
+    }
 }
 
 .col-4 {
     display: flex;
     flex-direction: column;
     flex: 0 1 calc(33.33% - 2.6rem);
+    @include sm {
+        flex: 1 1 calc(100% - 2.6rem);
+        max-width: 100%;
+    }
 }
 
 .col-6 {
@@ -27,4 +37,8 @@
     padding: 2.9rem;
     background: $color-dark2;
     border-radius: 1.2rem;
+    @include sm {
+        flex: 1 1 calc(100% - 2.6rem);
+        max-width: 80%;
+    }
 }

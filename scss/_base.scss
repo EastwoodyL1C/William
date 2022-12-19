@@ -1,5 +1,11 @@
 html {
     font-size: 10px;
+    @include lg {
+        font-size: 8px;
+    }
+    @include sm {
+        font-size: 5px;
+    }
 }
 
 body {
@@ -10,6 +16,9 @@ body {
 h1 {
     @include text ($font-base, 700, 9.2rem, 10.9rem, $color-white);
     margin: 0;
+    @include sm {
+        @include text ($font-base, 700, 6rem, 7rem, $color-white);  
+    }
 }
 h2 {
     @include text ($font-base, 700, 4.4rem, 5.2rem, $color-white);

@@ -32,4 +32,11 @@
     &:hover p {
         color: $color-white;
     }
+    @include md {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include sm {
+    }
 }

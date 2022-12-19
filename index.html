@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William K.</title>
     <link rel="shortcut icon" href="img\favicon.png" type="image/png">
-    <link rel="stylesheet" href="img\plagins\bootstrap.css">
+    <link rel="stylesheet" href="plagins\bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
             <header class="header">
                 <a href="$" class="header__logo">William King<span>.</span></a>
-                    <div class="header nav">
-                        <nav class="nav">
-                            <ul class="nav__ul">
-                                <li class="nav__li"><a href="$" class="nav__a nav__a_active">About</a></li>
-                                <li class="nav__li"><a href="$" class="nav__a">Services</a></li>
-                                <li class="nav__li"><a href="$" class="nav__a">Portfolio</a></li>
-                                <li class="nav__li"><a href="$" class="nav__a">Testimonials</a></li>
-                                <li class="nav__li"><a href="$" class="nav__a">Pricing</a></li>
-                                <li class="nav__li"><a href="$" class="nav__a">Contact</a></li>
-                            </ul>
-                        </nav>
+                <div class="header__menu">
+                    <!-- <span id="icon-menu" onclick="navToggle()" class="material-symbols-outlined _active">close</span> -->
+                </div>
+                <nav class="header__nav">
+                    <div class="nav">
+                        <ul id="nav" class="nav__ul">
+                            <li class="nav__li"><a href="$" class="nav__a nav__a_active">About</a></li>
+                            <li class="nav__li"><a href="$" class="nav__a">Services</a></li>
+                            <li class="nav__li"><a href="$" class="nav__a">Portfolio</a></li>
+                            <li class="nav__li"><a href="$" class="nav__a">Testimonials</a></li>
+                            <li class="nav__li"><a href="$" class="nav__a">Pricing</a></li>
+                            <li class="nav__li"><a href="$" class="nav__a">Contact</a></li>
+                        </ul>
+                        <span id="icon-close" onclick="navToggle()" class="material-symbols-outlined">menu</span>
                     </div>
+                </nav>
             </header>
             <section class="about">
                 <div class="about__info info">
@@ -118,25 +123,66 @@
                 <h2 class="portfolio__title">My <span>Portfolio</span></h2>
                 <p class="portfolio__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</p>
                 <div class="portfolio__item">
-                    <img src="img\potfolio\scale.svg" alt="scale" class="item__scale-img">
                     <div class="row">
                         <div class="col-4 item">
                             <img src="img\potfolio\portfolio-1.jpg" alt="portfolio-1" class="item__img">
+                            <div class="item__search">
+                                <svg class="item__search-img" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7045 32.9468C31.1439 33.3861 31.8562 33.3861 32.2955 32.9468C32.7348 32.5074 32.7348 31.7951 32.2955 31.3558L30.7045 32.9468ZM25.2072 27.4495L30.7045 32.9468L32.2955 31.3558L26.7982 25.8585L25.2072 27.4495Z" fill="white"/>
+                                    <path d="M4.97359 13.1374C5.84796 9.40982 8.75846 6.49932 12.486 5.62496C15.178 4.9935 17.9796 4.9935 20.6716 5.62496C24.3991 6.49932 27.3096 9.40982 28.184 13.1374C28.8154 15.8294 28.8154 18.631 28.184 21.3229C27.3096 25.0505 24.3991 27.961 20.6716 28.8354C17.9796 29.4668 15.178 29.4668 12.486 28.8354C8.75846 27.961 5.84796 25.0505 4.97359 21.3229C4.34214 18.631 4.34214 15.8294 4.97359 13.1374Z" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    <path d="M4.97359 13.1374C4.34214 15.8294 4.34214 18.631 4.97359 21.3229C5.84796 25.0505 8.75846 27.961 12.486 28.8354C15.178 29.4668 17.9796 29.4668 20.6716 28.8354C24.3991 27.961 27.3096 25.0505 28.184 21.3229C28.8154 18.631 28.8154 15.8294 28.184 13.1374C27.3096 9.40982 24.3991 6.49932 20.6716 5.62496C17.9796 4.9935 15.178 4.9935 12.486 5.62496" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
                         </div>
                         <div class="col-4 item">
                             <img src="img\potfolio\portfolio-2.jpg" alt="portfolio-2" class="item__img">
+                            <div class="item__search">
+                                <svg class="item__search-img" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7045 32.9468C31.1439 33.3861 31.8562 33.3861 32.2955 32.9468C32.7348 32.5074 32.7348 31.7951 32.2955 31.3558L30.7045 32.9468ZM25.2072 27.4495L30.7045 32.9468L32.2955 31.3558L26.7982 25.8585L25.2072 27.4495Z" fill="white"/>
+                                    <path d="M4.97359 13.1374C5.84796 9.40982 8.75846 6.49932 12.486 5.62496C15.178 4.9935 17.9796 4.9935 20.6716 5.62496C24.3991 6.49932 27.3096 9.40982 28.184 13.1374C28.8154 15.8294 28.8154 18.631 28.184 21.3229C27.3096 25.0505 24.3991 27.961 20.6716 28.8354C17.9796 29.4668 15.178 29.4668 12.486 28.8354C8.75846 27.961 5.84796 25.0505 4.97359 21.3229C4.34214 18.631 4.34214 15.8294 4.97359 13.1374Z" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    <path d="M4.97359 13.1374C4.34214 15.8294 4.34214 18.631 4.97359 21.3229C5.84796 25.0505 8.75846 27.961 12.486 28.8354C15.178 29.4668 17.9796 29.4668 20.6716 28.8354C24.3991 27.961 27.3096 25.0505 28.184 21.3229C28.8154 18.631 28.8154 15.8294 28.184 13.1374C27.3096 9.40982 24.3991 6.49932 20.6716 5.62496C17.9796 4.9935 15.178 4.9935 12.486 5.62496" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
                         </div>
                         <div class="col-4 item">
                             <img src="img\potfolio\portfolio-3.jpg" alt="portfolio-3" class="item__img">
+                            <div class="item__search">
+                                <svg class="item__search-img" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7045 32.9468C31.1439 33.3861 31.8562 33.3861 32.2955 32.9468C32.7348 32.5074 32.7348 31.7951 32.2955 31.3558L30.7045 32.9468ZM25.2072 27.4495L30.7045 32.9468L32.2955 31.3558L26.7982 25.8585L25.2072 27.4495Z" fill="white"/>
+                                    <path d="M4.97359 13.1374C5.84796 9.40982 8.75846 6.49932 12.486 5.62496C15.178 4.9935 17.9796 4.9935 20.6716 5.62496C24.3991 6.49932 27.3096 9.40982 28.184 13.1374C28.8154 15.8294 28.8154 18.631 28.184 21.3229C27.3096 25.0505 24.3991 27.961 20.6716 28.8354C17.9796 29.4668 15.178 29.4668 12.486 28.8354C8.75846 27.961 5.84796 25.0505 4.97359 21.3229C4.34214 18.631 4.34214 15.8294 4.97359 13.1374Z" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    <path d="M4.97359 13.1374C4.34214 15.8294 4.34214 18.631 4.97359 21.3229C5.84796 25.0505 8.75846 27.961 12.486 28.8354C15.178 29.4668 17.9796 29.4668 20.6716 28.8354C24.3991 27.961 27.3096 25.0505 28.184 21.3229C28.8154 18.631 28.8154 15.8294 28.184 13.1374C27.3096 9.40982 24.3991 6.49932 20.6716 5.62496C17.9796 4.9935 15.178 4.9935 12.486 5.62496" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
                         </div>
                         <div class="col-4 item">
                             <img src="img\potfolio\portfolio-4.jpg" alt="portfolio-4" class="item__img">
+                            <div class="item__search">
+                                <svg class="item__search-img" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7045 32.9468C31.1439 33.3861 31.8562 33.3861 32.2955 32.9468C32.7348 32.5074 32.7348 31.7951 32.2955 31.3558L30.7045 32.9468ZM25.2072 27.4495L30.7045 32.9468L32.2955 31.3558L26.7982 25.8585L25.2072 27.4495Z" fill="white"/>
+                                    <path d="M4.97359 13.1374C5.84796 9.40982 8.75846 6.49932 12.486 5.62496C15.178 4.9935 17.9796 4.9935 20.6716 5.62496C24.3991 6.49932 27.3096 9.40982 28.184 13.1374C28.8154 15.8294 28.8154 18.631 28.184 21.3229C27.3096 25.0505 24.3991 27.961 20.6716 28.8354C17.9796 29.4668 15.178 29.4668 12.486 28.8354C8.75846 27.961 5.84796 25.0505 4.97359 21.3229C4.34214 18.631 4.34214 15.8294 4.97359 13.1374Z" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    <path d="M4.97359 13.1374C4.34214 15.8294 4.34214 18.631 4.97359 21.3229C5.84796 25.0505 8.75846 27.961 12.486 28.8354C15.178 29.4668 17.9796 29.4668 20.6716 28.8354C24.3991 27.961 27.3096 25.0505 28.184 21.3229C28.8154 18.631 28.8154 15.8294 28.184 13.1374C27.3096 9.40982 24.3991 6.49932 20.6716 5.62496C17.9796 4.9935 15.178 4.9935 12.486 5.62496" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
                         </div>
                         <div class="col-4 item">
                             <img src="img\potfolio\portfolio-5.jpg" alt="portfolio-5" class="item__img">
+                            <div class="item__search">
+                                <svg class="item__search-img" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7045 32.9468C31.1439 33.3861 31.8562 33.3861 32.2955 32.9468C32.7348 32.5074 32.7348 31.7951 32.2955 31.3558L30.7045 32.9468ZM25.2072 27.4495L30.7045 32.9468L32.2955 31.3558L26.7982 25.8585L25.2072 27.4495Z" fill="white"/>
+                                    <path d="M4.97359 13.1374C5.84796 9.40982 8.75846 6.49932 12.486 5.62496C15.178 4.9935 17.9796 4.9935 20.6716 5.62496C24.3991 6.49932 27.3096 9.40982 28.184 13.1374C28.8154 15.8294 28.8154 18.631 28.184 21.3229C27.3096 25.0505 24.3991 27.961 20.6716 28.8354C17.9796 29.4668 15.178 29.4668 12.486 28.8354C8.75846 27.961 5.84796 25.0505 4.97359 21.3229C4.34214 18.631 4.34214 15.8294 4.97359 13.1374Z" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    <path d="M4.97359 13.1374C4.34214 15.8294 4.34214 18.631 4.97359 21.3229C5.84796 25.0505 8.75846 27.961 12.486 28.8354C15.178 29.4668 17.9796 29.4668 20.6716 28.8354C24.3991 27.961 27.3096 25.0505 28.184 21.3229C28.8154 18.631 28.8154 15.8294 28.184 13.1374C27.3096 9.40982 24.3991 6.49932 20.6716 5.62496C17.9796 4.9935 15.178 4.9935 12.486 5.62496" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
                         </div>
                         <div class="col-4 item">
                             <img src="img\potfolio\portfolio-6.jpg" alt="portfolio-6" class="item__img">
+                            <div class="item__search">
+                                <svg class="item__search-img" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7045 32.9468C31.1439 33.3861 31.8562 33.3861 32.2955 32.9468C32.7348 32.5074 32.7348 31.7951 32.2955 31.3558L30.7045 32.9468ZM25.2072 27.4495L30.7045 32.9468L32.2955 31.3558L26.7982 25.8585L25.2072 27.4495Z" fill="white"/>
+                                    <path d="M4.97359 13.1374C5.84796 9.40982 8.75846 6.49932 12.486 5.62496C15.178 4.9935 17.9796 4.9935 20.6716 5.62496C24.3991 6.49932 27.3096 9.40982 28.184 13.1374C28.8154 15.8294 28.8154 18.631 28.184 21.3229C27.3096 25.0505 24.3991 27.961 20.6716 28.8354C17.9796 29.4668 15.178 29.4668 12.486 28.8354C8.75846 27.961 5.84796 25.0505 4.97359 21.3229C4.34214 18.631 4.34214 15.8294 4.97359 13.1374Z" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    <path d="M4.97359 13.1374C4.34214 15.8294 4.34214 18.631 4.97359 21.3229C5.84796 25.0505 8.75846 27.961 12.486 28.8354C15.178 29.4668 17.9796 29.4668 20.6716 28.8354C24.3991 27.961 27.3096 25.0505 28.184 21.3229C28.8154 18.631 28.8154 15.8294 28.184 13.1374C27.3096 9.40982 24.3991 6.49932 20.6716 5.62496C17.9796 4.9935 15.178 4.9935 12.486 5.62496" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,16 +304,17 @@
                 <div class="footer__block">
                     <p class="footer__licence">© 2020 All rights reserved. Designed by <a href="$" alt="licence">SA7MAN</a>.</p>
                     <nav class="footer__nav">
-                        <ul class="nav__ul">
-                            <li class="nav__li"><a href="$" class="nav__a">Twitter</a></li>
-                            <li class="nav__li"><a href="$" class="nav__a">Dribbble</a></li>
-                            <li class="nav__li"><a href="$" class="nav__a">Github</a></li>
-                            <li class="nav__li"><a href="$" class="nav__a">Instagram</a></li>
+                        <ul class="footer-nav__ul">
+                            <li class="footer-nav__li"><a href="$" class="footer-nav__a">Twitter</a></li>
+                            <li class="footer-nav__li"><a href="$" class="footer-nav__a">Dribbble</a></li>
+                            <li class="footer-nav__li"><a href="$" class="footer-nav__a">Github</a></li>
+                            <li class="footer-nav__li"><a href="$" class="footer-nav__a">Instagram</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

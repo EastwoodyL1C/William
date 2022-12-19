@@ -2,7 +2,7 @@ $font-base: 'Rubik', sans-serif;
 
 /*colors*/
 
-$color-dark1: #1E1E1E;
+$color-background: #1E1E1E;
 $color-dark2: #2D2B29;
 $color-white: #FFFFFF;
 $color-grey: #9B968B;
@@ -11,7 +11,15 @@ $color-primary_shadow: rgba(237, 155, 3, 0.1);
 $color-body: #A19A8B;
 $color-border: rgba(255, 255, 255,0.15);
 $color-grad: linear-gradient(180deg, #4D4A45 0%, #292824 100%);
-
+$bg-menu: rgba(0, 0, 0,0.4);
 
 /*btn border radius*/
+
 $b-rad: 0.5rem;
+
+/*breakboints*/
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;

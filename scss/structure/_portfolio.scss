@@ -16,28 +16,42 @@
 .item {
     max-width: 363px;
     margin-top: 1.5rem;
+    position: relative;
+    &__search {
+        width: 7.6rem;
+        height: 7.6rem;
+        background: $color-primary;
+        border-radius: 50%;
+        display: none;
+        z-index: 3;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        cursor: pointer;
+        &-img {
+            right: 28%;
+            top: 25%;
+            position: absolute;
+        }
+    }
     &__img {
         scale: 1.07;
         cursor: pointer;
         transition: .2s all ease-in-out;
         border-radius: 0.8rem;
-        position: relative;
-    }
-    &__scale-img {
-        opacity: 0;
-        /*
-        left: 50%;
-        top: 50%;
-    }   
-    :hover &__scale-img {
-        opacity: 1;
-        z-index: 4;
-        position: absolute;
-        */
+        width: 100%;
+        object-fit: cover;
+        &:hover + .item__search {
+            display: block;
+        }
     }
     :hover{
-        transform: scale(1.25);
+        transform: scale(1.05);
         z-index: 2;
         box-shadow: $color-primary 3px 3px, $color-white -3px -3px;
+    }
+    @include lg {
+        flex: 0 1 calc(50% - 2.6rem);
     }
 }
