@@ -60,9 +60,6 @@
             align-items: center;
             justify-content: center;
         }
-        &._active {
-            transform: translateX(0%);
-        }
         @include md {
             position: fixed;
             width: 100%;
@@ -72,9 +69,13 @@
             background: $bg-menu;
             transform: translateX(-150%);
             z-index: 3;
-            transition: 0.3s all ease-in-out;
             font-size: 2.5rem;
             line-height: 2.5rem;
+        }
+        &._active {
+            transform: translateX(0%);
+            transition: 0.3s all ease-in-out;
+            opacity: 1;
         }
     }
     &__a {
