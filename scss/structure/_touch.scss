@@ -15,6 +15,8 @@
     }
 }
 .field {
+    display: flex;
+    flex-direction: column;
     &__name {
         padding: 1.4rem 0rem 1.4rem 1.6rem;
         border: 1px solid $color-border;
@@ -39,7 +41,7 @@
         border-radius: 0.4rem;
         margin-bottom: 2.4rem;
         width: 100%;
-        @include text ($font-base, 400, 1.4rem, 1.7rem, $color-grey);
+        @include text ($font-base, 400, 1.4rem, 1.7rem, $color-white);
         background: none;
     }
     &__btn {
