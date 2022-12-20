@@ -46,28 +46,10 @@
         width: 24px;
         height: 36px;
     }
-    &:hover &__search-img{
-        display: block;
-        z-index: 4;
-        transform: scale(1.0);
-        box-shadow: none;
-    }
-    &:hover path{
-        display: block;
-        z-index: 4;
-        transform: scale(1.0);
-        box-shadow: none;
-    }
     &:hover &__search {
         display: block;
         z-index: 4;
-        transform: scale(1.0);
-        box-shadow: none;
-    }
-    :hover {
-        transform: scale(1.05);
-        z-index: 2;
-        box-shadow: $color-primary 3px 3px, $color-white -3px -3px;
+        transition: 0.3s all ease-in-out;
     }
     @include lg {
         flex: 0 1 calc(50% - 2.6rem);
